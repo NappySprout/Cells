@@ -1,0 +1,36 @@
+<html>
+<head>
+    <style>
+        * {
+            color:white;
+        }
+        input {
+            color:black;
+        }
+    </style>
+</head>
+    <body style="background:black">
+        <h1 >Press W to see next generation</h1>
+        <h1 >Press A to reset</h1>
+        <canvas id="screen"></canvas>
+        <br/>
+        <br/>
+        <label for="height">height</label><input type="number" value="100" id="heightEl">
+        <label for="width">width</label><input type="number" value="100" id="widthEl">
+        <label for="pixelSize">pixel-size</label><input type="number" value="5" id="pixelEl">
+        
+        <br/>
+        <h1>mode</h1>
+        <input type="radio" value="life" name="mode" checked><label for="width">Game of Life</label>
+        <input type="radio" value="cell" name="mode"><label for="width">Bulge</label>
+
+        <h1>neighbour</h1>
+        <input type="radio" value="filter" name="neighbour" checked><label for="width">filter</label>
+        <input type="radio" value="warp" name="neighbour"><label for="width">warp</label>
+        <h1>Bulge's tie</h1>
+        <input type="radio" value="1" name="tie" checked><label for="width">same</label>
+        <input type="radio" value="" name="tie"><label for="width">chance</label>
+        <script src="index.js"></script>
+        <script src="form.js"></script>
+    </body>
+    </html>
