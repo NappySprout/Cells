@@ -15,13 +15,13 @@ const getCheckedNameValue = inputname => document.querySelector(`input[name=${in
 
 const draw = (x,y,color)=>{screen.fillStyle = color;screen.fillRect(x*cellSize+1,y*cellSize+1,cellSize-1,cellSize-1);}// non functional
 
-const genCells = (x,y)=>{// non functional
+const genCells = (x,y)=>{
     val = []
     for(let i=0;i<y;i++){val.push([]);for(let _=0;_<y;_++)val[i].push(Math.round(Math.random()))}
     return val
 }
 
-const drawCells = (cells)=>{// non functional
+const drawCells = (cells)=>{
     cells.forEach((layer,y)=>{
         layer.forEach((cell,x)=>{
             if(cell==1)draw(x,y,"white") ; else draw(x,y,"black")
